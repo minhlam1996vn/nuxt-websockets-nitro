@@ -2,5 +2,15 @@
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
-  modules: ['@nuxt/eslint'],
+  runtimeConfig: {
+    public: {
+      webSocketHost: process.env.WS_HOST,
+    },
+  },
+  modules: ['@nuxt/eslint', '@vueuse/nuxt'],
+  nitro: {
+    experimental: {
+      websocket: true,
+    },
+  },
 })

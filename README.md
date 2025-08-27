@@ -1,6 +1,15 @@
-# Nuxt Minimal Starter
+# Nuxt Websockets Nitro
 
 Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+
+## Node.js Version
+
+This project requires **Node.js 22.x**.  
+You can check your Node.js version with:
+
+```bash
+node -v
+```
 
 ## Setup
 
@@ -9,15 +18,14 @@ Make sure to install dependencies:
 ```bash
 # npm
 npm install
+```
 
-# pnpm
-pnpm install
+### TypeScript Checking
 
-# yarn
-yarn install
+It’s recommended to run TypeScript checks early to detect issues.
 
-# bun
-bun install
+```sh
+npm run lint
 ```
 
 ## Development Server
@@ -27,15 +35,6 @@ Start the development server on `http://localhost:3000`:
 ```bash
 # npm
 npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
 ```
 
 ## Production
@@ -45,15 +44,6 @@ Build the application for production:
 ```bash
 # npm
 npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
 ```
 
 Locally preview production build:
@@ -61,15 +51,18 @@ Locally preview production build:
 ```bash
 # npm
 npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
 ```
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+
+## References
+
+<!-- npx nypm i wrangler -->
+
+https://www.youtube.com/watch?v=OfY7JcrqkPg
+
+https://nitro.build/guide/websocket
+
+https://github.com/nitrojs/nitro/issues/2171
+
+https://nuxt.com/docs/4.x/guide/directory-structure/app/app
